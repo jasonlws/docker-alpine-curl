@@ -17,5 +17,3 @@ Alpine Linux image does not come with curl. Therefore, this image created by alp
 ```bash
 docker run --rm jasonlws/alpine-curl curl https://www.google.com
 ```
-
-## Tags
