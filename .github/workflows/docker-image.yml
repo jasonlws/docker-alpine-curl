@@ -44,6 +44,7 @@ jobs:
         tags: ${{ vars.IMAGE_NAME }}:${{ vars.ALPINE_TAG }}
 
     - name: Docker Hub Description
+      if: github.ref_name == 'latest'
       uses: peter-evans/dockerhub-description@v3.4.2
       with:
         username: ${{ secrets.HUB_USERNAME }}
